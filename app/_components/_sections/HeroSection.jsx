@@ -151,7 +151,7 @@ export default function HeroSection() {
             <ButtonLink
               title={"My Resume"}
               primary={true}
-              href="https://drive.google.com/file/d/1LLNJNjdlHQYWlcX0XFxPfgr64kjFVbh9/view?usp=sharing"
+              href="https://drive.google.com/file/d/1LLNJNjdlHQYWlcX0XFxPfgr64kjFVbh9/view?usp=sharing?usp=sharing"
               newTab
             />
           </motion.div>

@@ -45,7 +45,7 @@ export default function AboutSection() {
         {/* Embedded Resume PDF */}
         <div className="mt-12 w-full flex justify-center">
           <iframe
-            src="https://drive.google.com/file/d/1L_ZMBRa1zd7tn70peFrRjIdtl8iB-EDf/preview"
+            src="https://drive.google.com/file/d/1LLNJNjdlHQYWlcX0XFxPfgr64kjFVbh9/view"
             className="w-full lg:w-[850px] h-[50dvh]"
             allow="autoplay"
           ></iframe>
