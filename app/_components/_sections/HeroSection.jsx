@@ -9,6 +9,7 @@ import dots from "../../../public/photos/Dots.png";
 import Image from "next/image";
 import Link from "next/link";
 import { FaRegShareFromSquare } from "react-icons/fa6";
+import QuoteBoxSection from "./QuoteBoxSection";
 
 export default function HeroSection() {
   // أنيميشن النصوص
@@ -50,7 +51,7 @@ export default function HeroSection() {
       initial={{ opacity: 0, y: 200 }}
       transition={{ duration: 2, type: "spring" }}
       animate={{ opacity: 1, y: 0 }}
-      className="h-[70dvh] grid grid-cols-1 lg:grid-cols-2 gap-4 *:h-full *:w-full"
+      className=" grid grid-cols-1 lg:grid-cols-2 gap-0 *:h-full *:w-full"
     >
       <div className="flex justify-center flex-col">
         <h1 className="sr-only">
@@ -150,7 +151,7 @@ export default function HeroSection() {
             <ButtonLink
               title={"My Resume"}
               primary={true}
-              href="https://drive.google.com/file/d/1L_ZMBRa1zd7tn70peFrRjIdtl8iB-EDf/view?usp=sharing"
+              href="https://drive.google.com/file/d/1LLNJNjdlHQYWlcX0XFxPfgr64kjFVbh9/view?usp=sharing"
               newTab
             />
           </motion.div>
@@ -158,7 +159,7 @@ export default function HeroSection() {
       </div>
       {/* ---------------------------- */}
       {/* قسم الصور */}
-      <div className="relative flex justify-center items-end">
+      <div className="relative flex justify-center items-start lg:mt-20">
         <motion.div
           className="w-full"
           initial="hidden"
@@ -166,7 +167,7 @@ export default function HeroSection() {
           variants={imageVariants}
         >
           <Image
-            className="w-[80%] pl-20"
+            className="w-[100%]"
             src={landingImage}
             alt="Ahmed Mahmoud professional portfolio hero image"
             quality={100}
@@ -177,7 +178,7 @@ export default function HeroSection() {
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1, delay: 0.5 }}
-          className="absolute bottom-[10%] right-[8%]"
+          className="absolute w-[55px] lg:w-[100px] bottom-[20%] right-[8%]"
         >
           <Image
             src={dots}
@@ -191,7 +192,7 @@ export default function HeroSection() {
           initial={{ opacity: 0, rotate: -10, scale: 0.8 }}
           animate={{ opacity: 1, rotate: 0, scale: 1 }}
           transition={{ duration: 1.5, delay: 0.8 }}
-          className="absolute -z-10 top-[20%] w-[50%] lg:w-[100%] lg:top-[43%] left-[15%] lg:left-[15%]"
+          className="absolute -z-10 top-[39%] left-[20%] w-[50%] lg:w-[100%] lg:top-[33%] lg:left-[25%]"
         >
           <Image
             className="w-20 lg:w-32"
@@ -200,22 +201,9 @@ export default function HeroSection() {
             quality={100}
           />
         </motion.div>
-
-        {/* نص الحالة */}
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 1 }}
-          className="absolute top-[100%] tracking-wider flex items-center gap-4 left-[50$] translate-y-[100%] p-2 lg:p-4 border w-full lg:w-[80%]"
-        >
-          <motion.p
-            className="w-6 h-6 bg-primary"
-            initial={{ scale: 0 }}
-            animate={{ scale: 1 }}
-            transition={{ duration: 0.5, delay: 1.2 }}
-          />
-          <motion.span>Open to new opportunities</motion.span>
-        </motion.div>
+      </div>
+      <div className="lg:hidden">
+        <QuoteBoxSection />
       </div>
     </motion.div>
   );

@@ -10,7 +10,7 @@ export default function QuoteBoxSection() {
       initial={{ opacity: 0, y: 50, scale: 0.9 }}
       animate={{ opacity: 1, y: 0, scale: 1 }}
       transition={{ duration: 1.2, type: "spring" }}
-      className="mt-10 lg:mt-20 border border-gray w-full relative p-4 tracking-wider text-lg md:text-2xl text-center"
+      className="lg:-top-20 relative border border-grey p-4 tracking-wider text-md md:text-2xl text-center"
     >
       {/* نص الاقتباس مع حركة تذبذب */}
       <motion.p

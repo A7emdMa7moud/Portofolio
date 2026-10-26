@@ -36,7 +36,9 @@ export default function page() {
       <Suspense fallback={<SkeletonLoader />}>
         <section className="flex flex-col gap-20">
           <HeroSection />
-          <QuoteBoxSection />
+          <div className="hidden lg:block">
+            <QuoteBoxSection />
+          </div>
           <ProjectsSection />
           <SkillsSection />
           <AboutSection />
